@@ -36,8 +36,8 @@ print("twitter/enesilhaydin \n ======================")
 
 consumer_key=input("Consumer key'i giriniz = ")
 consumer_secret=input("Consumer Secret'i giriniz = ")
-access_token=input("Access Token'i giriniz = ")
-access_token_secret=input("Access Token Secret'i giriniz = ")
+#access_token=input("Access Token'i giriniz = ")
+#access_token_secret=input("Access Token Secret'i giriniz = ")
 
 
 done = False
@@ -50,7 +50,7 @@ print("\n ===========================")
 
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+#auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
@@ -101,7 +101,3 @@ for takipciler in followers_ids:
         #api.create_block(id=takipciler)
         #print(takipciler," kullanicisi engellendi.")
         #print("===")
-
-
-
-
